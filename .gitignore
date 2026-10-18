@@ -1,0 +1,15 @@
+# 开发辅助脚本（仅本地使用，不上传）
+_*.py
+*.pyc
+__pycache__/
+
+# 部署指南（仅本地参考，不上传）
+部署指南.md
+
+# 系统文件
+Thumbs.db
+.DS_Store
+desktop.ini
+
+# Git
+.git/
