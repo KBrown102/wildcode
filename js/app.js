@@ -7,7 +7,7 @@ const projects = [
     tags:['JavaScript','Canvas','Roguelite'], cat:'GAME',
     cover:'assets/covers/time-survivors.jpg',
     repo:'https://github.com/KBrown102/time-survivors',
-    demo:'https://kbrown102.github.io/time-survivors/'
+    demo:'https://survivors.wildcode.cn/'
   },
   {
     idx:'02', name:'飞鸟巡游', en:'Bird Flight Safari',
@@ -15,7 +15,7 @@ const projects = [
     tags:['Three.js','Canvas','壁纸场景'], cat:'WALLPAPER',
     cover:'assets/covers/bird-flight-safari.jpg',
     repo:'https://github.com/KBrown102/bird-flight-safari',
-    demo:'https://kbrown102.github.io/bird-flight-safari/'
+    demo:'https://safari.wildcode.cn/'
   },
   {
     idx:'03', name:'旅行牛仔', en:'Traveling Cowboy',
@@ -23,7 +23,7 @@ const projects = [
     tags:['JavaScript','HTML5','壁纸场景'], cat:'WALLPAPER',
     cover:'assets/covers/traveling-cowboy.jpg',
     repo:'https://github.com/KBrown102/Traveling-Cowboy',
-    demo:'https://kbrown102.github.io/Traveling-Cowboy/'
+    demo:'https://cowboy.wildcode.cn/'
   },
   {
     idx:'04', name:'烟花工坊 · 配方师', en:'Fireworks Studio',
@@ -31,7 +31,7 @@ const projects = [
     tags:['Canvas','粒子系统','创意工具'], cat:'TOOL',
     cover:'assets/covers/fireworks-studio.jpg',
     repo:'https://github.com/KBrown102/fireworks-studio',
-    demo:'https://kbrown102.github.io/fireworks-studio/'
+    demo:'https://fireworks.wildcode.cn/'
   },
   {
     idx:'05', name:'无人机表演 · 节目编排', en:'Drone Show',
@@ -39,7 +39,7 @@ const projects = [
     tags:['JavaScript','时间轴编排','创意工具'], cat:'TOOL',
     cover:'assets/covers/drone-show.jpg',
     repo:'https://github.com/KBrown102/drone-show',
-    demo:'https://kbrown102.github.io/drone-show/'
+    demo:'https://drone.wildcode.cn/'
   },
   {
     idx:'06', name:'拼豆图纸生成器', en:'Perler Bead Generator',
@@ -47,7 +47,7 @@ const projects = [
     tags:['JavaScript','图像处理','本地工具'], cat:'TOOL',
     cover:'assets/covers/perler-bead-generator.jpg',
     repo:'https://github.com/KBrown102/perler-bead-generator',
-    demo:'https://kbrown102.github.io/perler-bead-generator/'
+    demo:'https://perler.wildcode.cn/'
   },
   {
     idx:'07', name:'灵感图谱', en:'InspireGraph',
@@ -55,7 +55,7 @@ const projects = [
     tags:['JavaScript','3D 图谱','概念网络'], cat:'TOOL',
     cover:'assets/covers/inspire-graph.jpg',
     repo:'https://github.com/KBrown102/InspireGraph',
-    demo:'https://kbrown102.github.io/InspireGraph/'
+    demo:'https://inspire.wildcode.cn/'
   },
   {
     idx:'08', name:'项目结构分析器', en:'Project Analyzer',
@@ -79,7 +79,7 @@ const projects = [
     tags:['Three.js','视频处理','时空可视化'], cat:'TOOL',
     cover:'assets/covers/space-time-cube.jpg',
     repo:'https://github.com/KBrown102/space-time-cube',
-    demo:'https://kbrown102.github.io/space-time-cube/'
+    demo:'https://spacetime.wildcode.cn/'
   }
 ];
 
