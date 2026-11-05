@@ -10,7 +10,7 @@ body{ position:relative; }                       /* 小马世界坐标系（body
 /* ---- 左下角宠物：眼镜野马（站长本人吉祥物，点击开关音乐功能不变）---- */
 #pet{
   width:120px; height:120px;
-  background:url("../assets/horses/yan.png") center/contain no-repeat;
+  background:url("https://wildcode-img.oss-cn-chengdu.aliyuncs.com/horses/yan.png") center/contain no-repeat;
   animation: petFloat 7s ease-in-out infinite;
 }
 #pet:hover{ animation-duration:4.5s; }
@@ -22,11 +22,11 @@ body{ position:relative; }                       /* 小马世界坐标系（body
   background-repeat:no-repeat; background-position:center bottom; background-size:contain;
   pointer-events:none;
 }
-.h-free::after{   background-image:url("../assets/horses/shan.png"); animation: horseRun   3.6s ease-in-out infinite alternate; }
-.h-shy::after{    background-image:url("../assets/horses/ying.png"); animation: horseShy   6.8s ease-in-out infinite; }
-.h-happy::after{  background-image:url("../assets/horses/lv.png");   animation: horseBounce 1.2s ease-in-out infinite; }
-.h-lazy::after{   background-image:url("../assets/horses/zong.png"); animation: horseLazy  5.6s ease-in-out infinite; }
-.h-angry::after{  background-image:url("../assets/horses/lan.png");  animation: horseAngry .85s ease-in-out infinite; }
+.h-free::after{   background-image:url("https://wildcode-img.oss-cn-chengdu.aliyuncs.com/horses/shan.png"); animation: horseRun   3.6s ease-in-out infinite alternate; }
+.h-shy::after{    background-image:url("https://wildcode-img.oss-cn-chengdu.aliyuncs.com/horses/ying.png"); animation: horseShy   6.8s ease-in-out infinite; }
+.h-happy::after{  background-image:url("https://wildcode-img.oss-cn-chengdu.aliyuncs.com/horses/lv.png");   animation: horseBounce 1.2s ease-in-out infinite; }
+.h-lazy::after{   background-image:url("https://wildcode-img.oss-cn-chengdu.aliyuncs.com/horses/zong.png"); animation: horseLazy  5.6s ease-in-out infinite; }
+.h-angry::after{  background-image:url("https://wildcode-img.oss-cn-chengdu.aliyuncs.com/horses/lan.png");  animation: horseAngry .85s ease-in-out infinite; }
 
 /* 尺寸建议（按你页面实际布局微调，保持等比：图是 288x512 左右竖图） */
 .horse{ width:84px; height:96px; left:0; top:0; }   /* left/top 锚定视口原点，JS translate 定位才生效 */
@@ -131,6 +131,12 @@ body{ position:relative; }                       /* 小马世界坐标系（body
 .hp-row input[type="checkbox"]{
   accent-color:#FF6A3D; width:15px; height:15px; cursor:pointer;
 }
+.hp-sel{
+  flex:1; min-width:0; background:#10141C; color:#E8E6E1;
+  border:1px solid rgba(255,255,255,.12); border-radius:8px;
+  padding:5px 8px; font-size:12px; cursor:pointer; font-family:inherit;
+}
+.hp-sel:focus{ outline:none; border-color:#3DE0C8; }
 .hp-tip{ color:#6E7380; font-size:11px; }
 @media (max-width: 640px){
   .horse-panel{ width:220px; max-height:56vh; overflow-y:auto; }

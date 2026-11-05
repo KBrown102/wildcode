@@ -682,3 +682,49 @@ footer{border-top:1px solid var(--line-soft);padding:40px 0 60px}
             happy=绿叶(lv) | lazy=棕鬃(zong) | angry=蓝衣(lan)
    原理：不给 HTML 动刀，用 background-image 挂图 + transform 动画
    ============================================================ */
+
+/* ============================================================
+   NOW 状态条（此刻正在折腾）
+   ============================================================ */
+.now-bar{
+  position:relative;z-index:2;max-width:var(--maxw);margin:0 auto 76px;padding:0 32px;
+  display:flex;align-items:center;gap:26px;flex-wrap:wrap;
+}
+.now-tag{
+  display:flex;align-items:center;gap:8px;
+  font-family:var(--font-disp);font-weight:800;font-size:13px;letter-spacing:.3em;
+  color:var(--orange);text-transform:uppercase;
+}
+.now-tag::before{content:'▍';color:var(--teal);animation:blink 1.1s steps(1) infinite}
+.now-tag .cn{color:var(--dim);font-weight:400;letter-spacing:.18em}
+.now-list{display:flex;gap:10px 30px;flex-wrap:wrap}
+.now-item{display:flex;align-items:center;gap:9px;font-size:13px;color:var(--dim);letter-spacing:.03em}
+.now-item i{width:6px;height:6px;border-radius:50%;background:var(--orange);box-shadow:0 0 8px rgba(255,106,61,.8);flex:none}
+.now-item b{color:var(--ink);font-weight:800}
+@keyframes blink{50%{opacity:.25}}
+@media(max-width:760px){.now-bar{gap:14px;margin-bottom:56px}.now-list{gap:6px 18px}}
+
+/* ============================================================
+   催更互动卡
+   ============================================================ */
+.urge-card{
+  margin-top:56px;padding:26px 30px;
+  display:flex;align-items:center;gap:22px;flex-wrap:wrap;
+  border:1px dashed rgba(232,230,225,.22);border-radius:14px;
+  background:linear-gradient(135deg,rgba(255,106,61,.07),rgba(61,224,200,.05));
+}
+.urge-icon{color:var(--orange);flex:none;filter:drop-shadow(0 0 10px rgba(255,106,61,.5))}
+.urge-body{flex:1;min-width:180px}
+.urge-body h4{font-family:var(--font-body);font-weight:900;font-size:20px;letter-spacing:.03em}
+.urge-body p{color:var(--dim);font-size:13px;margin-top:4px;letter-spacing:.02em}
+.urge-card .btn{margin-left:auto}
+.urge-card .cnt{
+  display:inline-flex;align-items:center;justify-content:center;min-width:24px;height:24px;
+  border-radius:50%;background:var(--teal);color:#0A0C12;font-weight:900;font-size:12px;
+  margin-left:8px;box-shadow:0 0 12px rgba(61,224,200,.5);
+}
+.btn-arrow{display:inline-block;margin-left:8px;transition:transform .25s}
+.btn:hover .btn-arrow{transform:translateX(4px)}
+.btn.pop{animation:urgePop .45s}
+@keyframes urgePop{25%{transform:scale(1.12)}55%{transform:scale(.96)}}
+@media(max-width:560px){.urge-card .btn{margin-left:0;width:100%;justify-content:center}}

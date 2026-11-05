@@ -5,7 +5,8 @@ const projects = [
     idx:'01', name:'时空幸存者', en:'Time Survivors',
     desc:'像素风幸存者类 Roguelite：ESM 模块化架构、技能树成长系统、三存档机制，在怪潮中生存、升级、进化。',
     tags:['JavaScript','Canvas','Roguelite'], cat:'GAME',
-    cover:'assets/covers/time-survivors.jpg',
+    cta:'开局流浪',
+    cover:'https://wildcode-img.oss-cn-chengdu.aliyuncs.com/covers/time-survivors.jpg',
     repo:'https://github.com/KBrown102/time-survivors',
     demo:'https://survivors.wildcode.cn/'
   },
@@ -13,7 +14,8 @@ const projects = [
     idx:'02', name:'飞鸟巡游', en:'Bird Flight Safari',
     desc:'俯视角飞鸟向上穿越五个场景的循环小游戏——从星空银河到冰原，一镜到底的飞行体验。',
     tags:['Three.js','Canvas','壁纸场景'], cat:'WALLPAPER',
-    cover:'assets/covers/bird-flight-safari.jpg',
+    cta:'起飞巡游',
+    cover:'https://wildcode-img.oss-cn-chengdu.aliyuncs.com/covers/bird-flight-safari.jpg',
     repo:'https://github.com/KBrown102/bird-flight-safari',
     demo:'https://safari.wildcode.cn/'
   },
@@ -21,7 +23,8 @@ const projects = [
     idx:'03', name:'旅行牛仔', en:'Traveling Cowboy',
     desc:'西部主题网页休闲游戏原型，纯前端实现，打开浏览器即可游玩，在荒野中踏上旅途。',
     tags:['JavaScript','HTML5','壁纸场景'], cat:'WALLPAPER',
-    cover:'assets/covers/traveling-cowboy.jpg',
+    cta:'上路出发',
+    cover:'https://wildcode-img.oss-cn-chengdu.aliyuncs.com/covers/traveling-cowboy.jpg',
     repo:'https://github.com/KBrown102/Traveling-Cowboy',
     demo:'https://cowboy.wildcode.cn/'
   },
@@ -29,7 +32,8 @@ const projects = [
     idx:'04', name:'烟花工坊 · 配方师', en:'Fireworks Studio',
     desc:'像调酒一样调配烟花：火药配比、颜色、爆炸形态与节奏，画布实时发射预览，配方保存复用。从一捧火药，到满天星河。',
     tags:['Canvas','粒子系统','创意工具'], cat:'TOOL',
-    cover:'assets/covers/fireworks-studio.jpg',
+    cta:'放场烟花',
+    cover:'https://wildcode-img.oss-cn-chengdu.aliyuncs.com/covers/fireworks-studio.jpg',
     repo:'https://github.com/KBrown102/fireworks-studio',
     demo:'https://fireworks.wildcode.cn/'
   },
@@ -37,7 +41,8 @@ const projects = [
     idx:'05', name:'无人机表演 · 节目编排', en:'Drone Show',
     desc:'纯前端无人机编队表演编排工具：拖拽时间轴、排布队形、设计灯光，导出 JSON 节目单，实时预览所见即所得。',
     tags:['JavaScript','时间轴编排','创意工具'], cat:'TOOL',
-    cover:'assets/covers/drone-show.jpg',
+    cta:'排场大秀',
+    cover:'https://wildcode-img.oss-cn-chengdu.aliyuncs.com/covers/drone-show.jpg',
     repo:'https://github.com/KBrown102/drone-show',
     demo:'https://drone.wildcode.cn/'
   },
@@ -45,7 +50,8 @@ const projects = [
     idx:'06', name:'拼豆图纸生成器', en:'Perler Bead Generator',
     desc:'把本地图片转成拼豆图纸的网页工具。纯本地运行、图片不上传，无需安装、零依赖。',
     tags:['JavaScript','图像处理','本地工具'], cat:'TOOL',
-    cover:'assets/covers/perler-bead-generator.jpg',
+    cta:'画张图纸',
+    cover:'https://wildcode-img.oss-cn-chengdu.aliyuncs.com/covers/perler-bead-generator.jpg',
     repo:'https://github.com/KBrown102/perler-bead-generator',
     demo:'https://perler.wildcode.cn/'
   },
@@ -53,7 +59,8 @@ const projects = [
     idx:'07', name:'灵感图谱', en:'InspireGraph',
     desc:'把灵感诞生做成可观测的机制：多源概念扫描长出带权重的神经元，突触相连、按脑区分块，开可塑性自动演化出灵感种子。',
     tags:['JavaScript','3D 图谱','概念网络'], cat:'TOOL',
-    cover:'assets/covers/inspire-graph.jpg',
+    cta:'织张灵感网',
+    cover:'https://wildcode-img.oss-cn-chengdu.aliyuncs.com/covers/inspire-graph.jpg',
     repo:'https://github.com/KBrown102/InspireGraph',
     demo:'https://inspire.wildcode.cn/'
   },
@@ -61,7 +68,8 @@ const projects = [
     idx:'08', name:'项目结构分析器', en:'Project Analyzer',
     desc:'读取项目目录自动判断类型（18 套模板）、流程卡点与缺失文件，按 P0–P3 分级给出下一步建议，可打包成桌面工具。',
     tags:['HTML','本地工具','项目诊断'], cat:'TOOL',
-    cover:'assets/covers/project-analyzer.jpg',
+    cta:'诊断项目',
+    cover:'https://wildcode-img.oss-cn-chengdu.aliyuncs.com/covers/project-analyzer.jpg',
     repo:'https://github.com/KBrown102/project-analyzer',
     demo:null
   },
@@ -69,7 +77,8 @@ const projects = [
     idx:'09', name:'桌面壁纸引擎', en:'DeskCanvas',
     desc:'自制桌面壁纸软件：导入图片、网页、视频设为电脑壁纸，支持接入 AI 生成壁纸，把整个屏幕变成你的画布。',
     tags:['TypeScript','桌面应用','壁纸工具'], cat:'WALLPAPER',
-    cover:'assets/covers/deskcanvas.jpg',
+    cta:'桌面即画布',
+    cover:'https://wildcode-img.oss-cn-chengdu.aliyuncs.com/covers/deskcanvas.jpg',
     repo:'https://github.com/KBrown102/deskcanvas',
     demo:null
   },
@@ -77,7 +86,8 @@ const projects = [
     idx:'10', name:'时空立方体', en:'Space-Time Cube',
     desc:'把视频每一帧按时间堆叠成半透明柱体——用伪 4D 的视角看 3D 的世界，运动的轨迹在柱体里变成发光的“世界线”，拖动画布从任意角度观察时间。',
     tags:['Three.js','视频处理','时空可视化'], cat:'TOOL',
-    cover:'assets/covers/space-time-cube.jpg',
+    cta:'堆叠时间',
+    cover:'https://wildcode-img.oss-cn-chengdu.aliyuncs.com/covers/space-time-cube.jpg',
     repo:'https://github.com/KBrown102/space-time-cube',
     demo:'https://spacetime.wildcode.cn/'
   }
@@ -89,7 +99,7 @@ grid.innerHTML = projects.map((p,i)=>{
   const flip = i%2===1 ? ' flip':'';
   const dirMedia = i%2===0 ? 'from-l' : 'from-r';
   const playBtn = p.demo
-    ? `<button class="btn btn-primary" data-play="${p.demo}" data-name="${p.en}">在线试玩</button>`
+    ? `<button class="btn btn-primary" data-play="${p.demo}" data-name="${p.en}">${p.cta||'在线试玩'}<span class="btn-arrow">→</span></button>`
     : '';
   const liveTag = p.demo ? '<span class="live">在线</span>' : '';
   return `
@@ -407,6 +417,20 @@ document.addEventListener('mouseout',e=>{
       bgm.pause();
       pet.classList.remove('playing');
     }
+  });
+})();
+
+/* ============ 曲目切换（控制台） ============ */
+(function(){
+  const bgm = document.getElementById('bgm');
+  const sel = document.getElementById('hpTrack');
+  if(!bgm || !sel) return;
+  sel.addEventListener('change', ()=>{
+    const wasPlaying = !bgm.paused;
+    bgm.src = sel.value;
+    if(wasPlaying){ bgm.play().catch(()=>{}); }
+    const vol = document.getElementById('hpVol');
+    if(vol) bgm.volume = vol.value/100;
   });
 })();
 
@@ -889,6 +913,31 @@ window.__PANEL__ = 'v2-panel';
     renderer.render(scene,camera);
     requestAnimationFrame(loop);
   })();
+})();
+
+/* ============ 催更互动（localStorage 计数） ============ */
+(function(){
+  const btn = document.getElementById('urgeBtn');
+  const count = document.getElementById('urgeCount');
+  const tip = document.getElementById('urgeTip');
+  if(!btn || !count) return;
+  const KEY = 'wildcode_urge_v1';
+  let n = parseInt(localStorage.getItem(KEY)||'0', 10) || 0;
+  count.textContent = n;
+  const tips = [
+    '荒野收到，正在码下一款…',
+    '马蹄声已经响起来了',
+    '灵感 +1，正在往代码里塞',
+    '再催就要连夜肝了',
+    '六只野马都替你着急了',
+    '收到！先去喂马，马上回来写'
+  ];
+  btn.addEventListener('click', ()=>{
+    n++; count.textContent = n;
+    localStorage.setItem(KEY, String(n));
+    btn.classList.remove('pop'); void btn.offsetWidth; btn.classList.add('pop');
+    if(tip) tip.textContent = tips[Math.floor(Math.random()*tips.length)];
+  });
 })();
 
 /* ============ 音量控制（竖版可展开 + 静音） ============ */

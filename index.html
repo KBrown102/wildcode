@@ -7,19 +7,18 @@
 <meta name="description" content="荒野（赵重）的个人作品站。HTML 游戏与创意工具，独立开发者，野码 WILD CODE。所有作品开源在 GitHub，欢迎来玩。">
 <meta property="og:type" content="website">
 <meta property="og:title" content="荒野 · 野码 WILD CODE — 个人作品站">
-<meta property="og:description" content="写代码十年，还在折腾。10 个已发布作品，每一件都是亲手做出来的，全部开源在 GitHub。">
+<meta property="og:description" content="写代码十年，还在折腾。10 个已发布作品，想法、设计和测试都在我手里，代码越来越多地交给 AI。">
 <meta property="og:url" content="https://wildcode.club">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="荒野 · 野码 WILD CODE — 个人作品站">
-<meta name="twitter:description" content="写代码十年，还在折腾。10 个已发布作品，每一件都是亲手做出来的，全部开源在 GitHub。">
+<meta name="twitter:description" content="写代码十年，还在折腾。10 个已发布作品，想法、设计和测试都在我手里，代码越来越多地交给 AI。">
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"Person","name":"赵重（荒野）","alternateName":"荒野 / 野码 WILD CODE","description":"个人作品站，独立开发者、游戏创作者。","url":"https://wildcode.club","sameAs":["https://github.com/KBrown102"]}
 </script>
 <link rel="stylesheet" href="https://miaoda.feishu.cn/fonts/css2?family=Syne:wght@400;600;700;800&family=Noto+Sans+SC:wght@300;400;500;700;900&display=swap">
 <link rel="stylesheet" href="css/style.css">
 <link rel="stylesheet" href="css/horses.css">
-<link rel="icon" type="image/png" href="assets/favicon.png?v=3">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230A0C12'/%3E%3Cpath d='M11 17 L21 47 L32 25 L43 47 L53 17' fill='none' stroke='%23FF6A3D' stroke-width='6.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3Ccircle cx='49' cy='50' r='4.5' fill='%233DE0C8'/%3E%3C/svg%3E" type="image/svg+xml">
+<link rel="icon" type="image/png" href="https://wildcode-img.oss-cn-chengdu.aliyuncs.com/favicon.png?v=3">
 </head>
 <body>
 
@@ -33,7 +32,7 @@
 <!-- ===== 导航 ===== -->
 <nav>
   <div class="nav-inner">
-    <a class="logo" href="#top"><img class="logo-ic" src="assets/brand/野码-图标-dark.png" alt="野码图标">野码<small>WILD&nbsp;CODE</small></a>
+    <a class="logo" href="#top"><img class="logo-ic" src="https://wildcode-img.oss-cn-chengdu.aliyuncs.com/brand/野码-图标-dark.png" alt="野码图标">野码<small>WILD&nbsp;CODE</small></a>
     <div class="nav-links" id="navLinks">
       <a href="#works" data-nav>作品</a>
       <a href="#connect" data-nav>交流</a>
@@ -54,7 +53,7 @@
   <div class="hero-kicker">WILD CODE · Independent Developer</div>
   <h1 class="hero-title">荒<span class="glow">野</span></h1>
   <p class="hero-sub">Independent Developer <b>/</b> Game Creator <b>/</b> Builder</p>
-  <p class="hero-desc">写代码十年，还在折腾。10 个已发布作品，每一件都是亲手做出来的，还有一整片游戏宇宙正在路上。这里是荒野的个人作品集。</p>
+  <p class="hero-desc">写代码十年，还在折腾。10 个已发布作品——想法、设计、测试调整都在我手里，动手写码越来越多地交给 AI。一整片游戏宇宙正在路上。这里是荒野的个人作品集。</p>
   <div class="hero-cta">
     <a class="btn btn-primary" href="#works">查看作品
       <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
@@ -67,8 +66,18 @@
   </div>
   <div class="scroll-hint"><span class="bar"></span>SCROLL</div>
   <div class="hero-bgword" aria-hidden="true">WILD</div>
-  <img class="hero-badge" src="assets/brand/野码-徽章.png" alt="野码徽章" aria-hidden="true">
+  <img class="hero-badge" src="https://wildcode-img.oss-cn-chengdu.aliyuncs.com/brand/野码-徽章.png" alt="野码徽章" aria-hidden="true">
 </header>
+
+<!-- ===== NOW · 此刻正在折腾 ===== -->
+<div class="now-bar wrap reveal" id="now">
+  <div class="now-tag">NOW<span class="cn">· 此刻</span></div>
+  <div class="now-list">
+    <span class="now-item"><i></i><b>8</b> 个作品全量在线试玩中</span>
+    <span class="now-item"><i></i><b>6</b> 只野马正在页面上跑酷</span>
+    <span class="now-item"><i></i>游戏宇宙社区 <b>.club</b> 施工中</span>
+  </div>
+</div>
 
 <!-- ===== 作品集 ===== -->
 <section class="works wrap" id="works">
@@ -82,6 +91,16 @@
     <button class="filter-btn" data-filter="WALLPAPER">壁纸</button>
   </div>
   <div class="works-grid" id="worksGrid"></div>
+  <div class="urge-card reveal" id="urgeCard">
+    <div class="urge-icon" aria-hidden="true">
+      <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 4.5 20.5h15L12 2z"/><path d="M12 8.5v4.5M12 16.5h.01"/></svg>
+    </div>
+    <div class="urge-body">
+      <h4>喜欢这座荒野？</h4>
+      <p id="urgeTip">狂点催更，荒野长出下一个作品。</p>
+    </div>
+    <button class="btn btn-primary" id="urgeBtn">催更<span class="cnt" id="urgeCount">0</span></button>
+  </div>
 </section>
 
 <!-- ===== 技术交流 ===== -->
@@ -170,7 +189,7 @@
   <h2 class="sec-title reveal">关于 <span class="cn">荒野</span></h2>
   <div class="about-grid">
     <div>
-      <div class="about-avatar reveal from-zoom"><img src="assets/brand/野码-头像.png" alt="野码头像"></div>
+      <div class="about-avatar reveal from-zoom"><img src="https://wildcode-img.oss-cn-chengdu.aliyuncs.com/brand/野码-头像.png" alt="野码头像"></div>
       <div class="about-id reveal from-flip">ZHAO <span class="dim">ZHONG</span></div>
       <div class="about-meta reveal">
         <div class="row"><span class="k">名字</span><span class="v">赵重 · 网名「荒野」</span></div>
@@ -229,14 +248,14 @@
       </div>
     </div>
   </div>
-  <img class="contact-poster reveal from-zoom" src="assets/brand/野码-海报-dark.png" alt="野码海报">
+  <img class="contact-poster reveal from-zoom" src="https://wildcode-img.oss-cn-chengdu.aliyuncs.com/brand/野码-海报-dark.png" alt="野码海报">
   <p class="contact-note reveal">个人联系方式 · 「野码」品牌的独立社交账号正在筹备中，敬请期待。</p>
 </section>
 
 <!-- ===== 页脚 ===== -->
 <footer>
   <div class="wrap foot-inner">
-    <div class="foot-logo"><img class="foot-ic" src="assets/brand/野码-图标-dark.png" alt="野码">野码 WILD CODE</div>
+    <div class="foot-logo"><img class="foot-ic" src="https://wildcode-img.oss-cn-chengdu.aliyuncs.com/brand/野码-图标-dark.png" alt="野码">野码 WILD CODE</div>
     <div class="foot-copy">© 2026 荒野 · 赵重 · 野码 WILD CODE · <a href="https://wildcode.cn" target="_blank" rel="noopener">wildcode.cn</a></div>
   </div>
 </footer>
@@ -277,6 +296,10 @@
   <div class="hp-sec">
     <div class="hp-sec-t">音乐</div>
     <label class="hp-row">音量 <input type="range" id="hpVol" min="0" max="100" value="60"></label>
+    <label class="hp-row">曲目 <select id="hpTrack" class="hp-sel">
+      <option value="mp3/bgm.mp3">站内 BGM</option>
+      <option value="mp3/travelers-encore.mp3">Travelers' Encore</option>
+    </select></label>
     <div class="hp-row hp-tip">点宠物开 / 关播放</div>
   </div>
   <div class="hp-sec">
@@ -332,7 +355,7 @@
 </div>
 <div class="tip-overlay" id="wxOverlay">
   <div class="tip-card">
-    <img src="assets/wechat-qr.png" alt="荒野的微信二维码">
+    <img src="https://wildcode-img.oss-cn-chengdu.aliyuncs.com/wechat-qr.png" alt="荒野的微信二维码">
     <p>扫码加个好友，<b>微信 137****4130</b> · 荒野</p>
     <button class="close" id="wxClose">关闭</button>
   </div>
