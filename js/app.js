@@ -362,42 +362,21 @@ document.addEventListener('mouseout',e=>{
   });
 })();
 
-/* ============ 彩蛋：控制台欢迎 + 拦截 ============ */
+/* ============ 彩蛋：山头上有风 ============ */
 (function(){
-  const style = 'color:#FF6A3D;font-size:15px;font-weight:bold;padding:4px 0;';
-  const dim = 'color:#8A8F98;font-size:12px;';
-  console.log('%c WILD CODE · 野码', style);
-  console.log('%c 你来了。翻代码不如直接来玩—— ', dim);
-  console.log('%c 荒野 · 赵重 · 微信 137****4130 · 8353****@qq.com', 'color:#3DE0C8;font-size:13px;');
-  /* ASCII 小马奔过荒原 */
-  const horse = [
-    "        .--.     .--.     .--.     .--.",
-    "       / - \\   / - \\   / - \\   / - \\",
-    "      | o o | | o o | | o o | | o o |",
-    "   ────(───)─(───)─(───)─(───)────"
-  ];
-  let f = 0;
-  const run = setInterval(()=>{
-    console.log('%c' + horse[f % horse.length], 'color:#FF6A3D;font-family:monospace;');
-    f++;
-    if(f > 3) clearInterval(run);
-  }, 180);
-
-  /* 拦截右键 */
-  document.addEventListener('contextmenu', e=>{
-    e.preventDefault();
-    console.log('%c 别挖了。想抄代码？先扫个码，荒野微信 137****4130。', 'color:#FF6A3D;font-size:13px;');
-  });
-  /* 拦截 F12 / Ctrl+Shift+I/J/C / Ctrl+U */
-  document.addEventListener('keydown', e=>{
-    const k = e.key.toUpperCase();
-    if(e.key === 'F12' ||
-       (e.ctrlKey && e.shiftKey && (k==='I'||k==='J'||k==='C')) ||
-       (e.ctrlKey && k==='U')){
-      e.preventDefault();
-      console.log('%c 我预判了你的预判。', 'color:#3DE0C8;font-size:14px;font-weight:bold;');
-    }
-  });
+  console.log(
+    '%c山头上有风。坐会儿，再走。\n%c（输入 wildcode() 看看野马在干嘛）',
+    'color:#8A8F98;font-size:13px;',
+    'color:#3DE0C8;font-size:11px;'
+  );
+  window.wildcode = function(){
+    console.log(
+      '%c        /\\\n       /  \\\n      /    \\\n     /      \\\n    /        \\\n___/          \\___',
+      'color:#FF6A3D;font-family:monospace;line-height:1.3;'
+    );
+    console.log('%c野马在山下跑了一圈，没看见你。', 'color:#8A8F98;font-size:12px;');
+    return 'wild';
+  };
 })();
 
 /* ============ 野码小马：BGM 开关 ============ */
